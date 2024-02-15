@@ -1,0 +1,347 @@
+body {
+    font-family: 'Century Gothic', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9; /* Puedes cambiar el color de fondo según tus preferencias */
+}
+
+header {
+    background-color: #e81d5a; /* Puedes cambiar el color de la barra de navegación según tus preferencias */
+    padding: 10px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #fc6881; /* Puedes cambiar el color de fondo de los botones de navegación según tus preferencias */
+    padding: 10px;
+    width: 50%;
+    border-radius: 20px;
+    height: 50px;
+    align-items: center;
+    margin: 0 auto;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff; /* Puedes cambiar el color del texto según tus preferencias */
+    transition: all .2s linear;
+}
+
+nav a:hover {
+    background-color: #e81d5a; /* Cambia el color de fondo al pasar el cursor */
+    color: #ffc0da; /* Cambia el color del texto al pasar el cursor */
+    transform: scale(1.5); /* Agranda el botón al pasar el cursor */
+}
+
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+#scrollToTop {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #fc6881;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: 'Century Gothic', sans-serif;
+}
+
+iframe{
+    border-radius: 20px;
+}
+
+video{
+    border-radius: 20px;
+    width: 40%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cursiva{
+    font-family: 'Pacifico', cursive;
+}
+ .white-title{
+    color: white;
+    font-size: 40px;
+ }
+
+ .pink{
+    color: #e81d5a;
+    font-size: 30px;
+ }
+
+ .pink-button{
+    bottom: 20px;
+    right: 20px;
+    background-color: #fc6881;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: 'Century Gothic', sans-serif;
+    font-size: 20px;
+    margin: 0 auto;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 8px 2px;
+    width: 150px;
+    height: 50px;
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+ }
+
+ .pink-button :hover{
+    background-color: #0056b3; /* Color de fondo al pasar el cursor */
+    transform: scale(1.1); /* Escala el botón al pasar el cursor */
+ }
+
+ .container {
+    display: flex;
+    align-items: center; /* Centra verticalmente los elementos */
+    padding: 0% 20% 0% 20%;
+}
+
+.container img {
+    width: 700px; /* Ajusta el tamaño de la imagen según sea necesario */
+    height: auto; /* Para mantener la proporción de aspecto */
+    margin-right: 20px; /* Espacio entre la imagen y el texto */
+}
+
+.container-2 {
+  display: flex;
+  align-items: center; /* Centra verticalmente los elementos */
+  padding: 0% 10% 0% 10%;
+}
+
+.right-content img {
+  width: 600px; /* Ajusta el tamaño de la imagen según sea necesario */
+  height: auto; /* Para mantener la proporción de aspecto */
+  margin-right: 5px; /* Espacio entre la imagen y el texto */
+}
+
+.right-content {
+    display: flex;
+    flex-direction: column; /* Los elementos dentro se colocan en columna */
+}
+
+.right-content p {
+    margin: 5px 0; /* Ajusta los márgenes entre los párrafos */
+}
+
+.links {
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.main{
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 300px));
+}
+
+.img-links {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.tabla-imagenes {
+  width: 60%;
+  border-collapse: collapse; /* Combina los bordes de las celdas */
+  margin: 0 auto;
+}
+
+.tabla-imagenes td {
+  border: 10px solid #ddd; /* Agrega bordes a las celdas */
+}
+
+.tabla-imagenes img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto; /* Centra la imagen horizontalmente dentro de la celda */
+}
+
+h2{
+  text-align: center;
+}
+
+p{
+    font-size: 20px;
+}
+
+.justify{
+    text-align: justify;
+}
+
+.send-flowers-regular {
+    font-family: "Send Flowers", cursive;
+    font-weight: 550;
+    font-style: normal;
+    font-size: 30px;
+  }
+
+  .gallery{
+    width: 100%;
+  }
+
+  .gallery-container{
+    align-items: center;
+    display: flex;
+    height: 400px;
+    margin: 0 auto;
+    max-width: 1000px;
+    position: relative;
+  }
+
+  .gallery-item{
+    height: 330px;
+    opacity: 0;
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+    width: 330px;
+    z-index: 0;
+    border-radius: 15px;
+    background-size: contain;
+  }
+
+  .gallery-item-1{
+    left: 15%;
+    opacity: .4;
+    transform: translateX(-50%);
+  }
+
+  .gallery-item-2, .gallery-item-4{
+    height: 380px;
+    opacity: 0.8;
+    width: 380px;
+    z-index: 1;
+  }
+
+  .gallery-item-2{
+    left: 30%;
+    transform: translateX(-50%);
+  }
+
+  .gallery-item-3{
+    box-shadow: -2px 5px 33px 6px rgba(0, 0, 0, 0.35);
+    height: 430px;
+    opacity: 1;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 430px;
+    z-index: 2;
+  }
+
+  .gallery-item-4{
+    left: 70%;
+    transform: translateX(-50%);
+  }
+
+  .gallery-item-5{
+    left: 85%;
+    opacity: .4;
+    transform: translateX(-50%);
+  }
+
+  .gallery-controls{
+    display: flex;
+    justify-content: center;
+    margin: 25px 0;
+    height: 100px;
+  }
+
+  .gallery-controls button{
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    font-size: 30px;
+    margin: 0 50px;
+    padding: 0 12px;
+    text-transform: capitalize;
+  }
+
+  .gallery-controls-button:focus{
+    outline: none;
+  }
+
+  .gallery-controls-previous{
+    position: relative;
+  }
+
+  .gallery-controls-previous::before{
+    border: solid #000;
+    border-width: 0 5px 5px 0;
+    content: '';
+    display: inline-block;
+    height: 5px;
+    left: -30px;
+    padding: 10px;
+    position: absolute;
+    top: 25%;
+    transform: rotate(135deg) translateY(-50%);
+    transition: left 0.15s ease-in-out;
+    width: 5px;
+  }
+
+  .gallery-controls-previous:hover::before{
+    left: -40px;
+  }
+
+  .gallery-controls-next{
+    position: relative;
+  }
+
+  .gallery-controls-next::before{
+    border: solid #000;
+    border-width: 0 5px 5px 0;
+    content: '';
+    display: inline-block;
+    height: 5px;
+    padding: 10px;
+    position: absolute;
+    right: -30px;
+    top: 45;
+    transform: rotate(-45deg) translateY(-50%);
+    transition: right 0.15s ease-in-out;
+    width: 5px;
+  }
+
+  .gallery-controls-next:hover:before{
+    right: -40px;
+  }
+
+  .gallery-nav{
+    bottom: -15px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+  }
+
+  .gallery-nav li{
+    background: #ccc;
+    border-radius: 50%;
+    height: 10px;
+    margin: 0 16px;
+    width: 10px;
+  }
+
+  .gallery-nav li.gallery-item-selected{
+    background: #555;
+  }

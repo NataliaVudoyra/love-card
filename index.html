@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarjeta de San Valentín</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 class="cursiva white-title">Para mi persona favorita</h1>
+    </header>
+    <br>
+    <section id="inicio">
+        <div class="container">
+            <img src="./assests/images/index_img.png"/>
+            <div class="right-content">
+                <h2 class="cursiva pink">Bienvenido</h2>
+                <p>Hola amorcito &#128156;.</p>
+                <p>Hoy no nos podremos ver, pero la distancia no me impide darte un detallito en este día al que llamas Día del Simp.</p> 
+                <p>Espero que te guste 👉👈.</p>
+                <br>
+                <br>
+                <a href="./public/tarjeta.html"><button class="pink-button">Siguiente</button></a>
+            </div>
+        </div>
+    <button id="scrollToTop" onclick="scrollToTop()">Volver arriba</button>
+    </section>
+    <script>
+        // JavaScript para gestionar el comportamiento de desplazamiento
+        window.onscroll = function() { showScrollButton() };
+
+        function showScrollButton() {
+            var button = document.getElementById("scrollToTop");
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                button.style.display = "block";
+            } else {
+                button.style.display = "none";
+            }
+        }
+
+        function scrollToTop() {
+            document.body.scrollTop = 0; // Para navegadores Safari
+            document.documentElement.scrollTop = 0; // Para otros navegadores
+        }
+    </script>
+</body>
+</html>
